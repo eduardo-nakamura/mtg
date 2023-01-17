@@ -14,12 +14,14 @@ import {MatCardModule} from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { CardsListComponent } from './cards-list/cards-list.component';
 import {MatListModule} from '@angular/material/list';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardDetailComponent,
-    CardsListComponent
+    CardsListComponent,
+    MessagesComponent
   ],
   imports: [
     MatCardModule,

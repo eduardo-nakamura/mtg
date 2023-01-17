@@ -7,4 +7,8 @@ export interface Card {
     text: string;
     colors: string[];
     colorIdentity: string[];
-  }
+}
+
+export interface CardList {  
+  cards: any[];
+}

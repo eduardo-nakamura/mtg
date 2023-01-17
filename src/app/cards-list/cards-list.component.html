@@ -1,0 +1,20 @@
+<h2>Cards List</h2>
+
+<mat-grid-list cols="6"  rowHeight="400px">
+  <mat-grid-tile *ngFor="let card of cards">  
+    
+    <mat-card class="example-card" [class.selected]="card === selectedCard" (click)="onSelect(card)">
+      
+      <mat-card-content>
+        <h2>
+          {{card.name}}
+        </h2>
+      </mat-card-content>      
+      <img mat-card-image [src]="card.imageUrl" [alt]="card.name" class="img-card">  
+    </mat-card>        
+  </mat-grid-tile>
+  
+</mat-grid-list>
+
+
+<app-card-detail [card]="selectedCard"></app-card-detail>

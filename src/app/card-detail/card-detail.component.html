@@ -1,1 +1,10 @@
-<h2>{{hero}}</h2>
+<div *ngIf="card">
+
+    <h2>{{card.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{card.multiverseid}}</div>
+    <div>
+        <label for="hero-name">Card name: </label>
+        <input id="hero-name" [(ngModel)]="card.name" placeholder="name">
+    </div>
+
+</div>

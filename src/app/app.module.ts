@@ -9,13 +9,21 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { CardsListComponent } from './cards-list/cards-list.component';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardDetailComponent
+    CardDetailComponent,
+    CardsListComponent
   ],
   imports: [
+    MatCardModule,
+    MatGridListModule,
     MatButtonModule,
     MatIconModule,
     MatSlideToggleModule,
@@ -23,7 +31,9 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

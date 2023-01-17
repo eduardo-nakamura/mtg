@@ -1,0 +1,31 @@
+.img-card{
+    border-radius: 12px;
+    width: 99%; 
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.example-card:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+    left: .1em;
+  }
+  
+  .example-card:active {
+    background-color: #525252;
+    color: #fafafa;
+  }
+  
+  .example-card.selected {
+    background-color: black;
+    color: white;
+  }
+  
+  .example-card.selected:hover {
+    background-color: #505050;
+    color: white;
+  }
+  
+  .example-card.selected:active {
+    background-color: black;
+    color: white;
+  }
